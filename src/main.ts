@@ -32,12 +32,12 @@ function main() {
   const controls = new OrbitControls( camera, renderer.domElement );
 
   const tilesRenderer = new TilesRenderer(
-    "https://cimsprojects.ca:9000/assets/epfl/tiled-photomesh/tileset.json"
+    "https://raw.githubusercontent.com/rvouilloz/hbim-viewer-fontainebleau/main/resources/models/tiled-photomesh/tileset.json"
   );
 
   const dracoLoader = new DRACOLoader();
   dracoLoader.setDecoderPath(
-    "https://cimsprojects.ca:9000/assets/epfl/draco/gltf/"
+    "https://raw.githubusercontent.com/rvouilloz/hbim-viewer-fontainebleau/main/resources/draco/gltf/"
   );
 
   const loader = new GLTFLoader(tilesRenderer.manager);
